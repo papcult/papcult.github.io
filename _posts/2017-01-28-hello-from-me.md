@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello from me, Cameron"
-date:   2017-01-22 12:50:34 +0000
+date:   2017-01-28 12:50:34 +0000
 categories: jekyll update
 ---
 
