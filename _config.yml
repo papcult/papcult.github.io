@@ -33,7 +33,7 @@ exclude:
 
 # Podcast settings
 podcast_url: http://www.papcult.com/podcast/
-podcast_album_art: https://s3-eu-west-1.amazonaws.com/images.papcult.com/iTunes-Papcult-Album-Art.jpg/
+podcast_album_art: https://s3-eu-west-1.amazonaws.com/images.papcult.com/iTunes-Papcult-Album-Art.jpg
 podcast_title: PapCult
 podcast_owner: "Cameron Nicolson, Fraser McGovern"
 podcast_email: papcult@gmail.com
