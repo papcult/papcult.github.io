@@ -38,10 +38,9 @@ xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0/play-podcasts.
 <url>{{ site.url }}{{ site.podcast_album_art }}</url>
 <link>{{ site.url }}</link>
 </image>
-<itunes:category text="{{ site.podcast_category }}">
+<itunes:category text="{{ site.podcast_category }}" />
 <itunes:category text="{{ site.podcast_subcategory_one }}" />
 <itunes:category text="{{ site.podcast_subcategory_two }}" />
-</itunes:category>
 {% for ep in site.categories.podcast %}
   <item>
     <title>{{ ep.title }}</title>
