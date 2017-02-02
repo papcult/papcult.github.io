@@ -18,8 +18,8 @@ email: papcult@gmail.com
 description: "A comedy show which looks at the popular, the cool and the fashionable, tearing apart the very fabric of modern life. Every episode covers something from the worlds of comedy, music, movies, gaming, technology, news, or something else entirely. Hosted by the writers, comedians and Scottish cultural icons Cameron Nicolson and Fraser McGovern, who are qualifed in everything about nothing. Join our cult."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.papcult.com/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: papcultdotcom
+github_username:  papcult
 
 # Build settings
 markdown: kramdown
@@ -35,7 +35,7 @@ exclude:
 podcast_url: http://www.papcult.com/podcast/
 podcast_album_art: https://s3-eu-west-1.amazonaws.com/images.papcult.com/iTunes-Papcult-Album-Art.jpg
 podcast_title: PapCult
-podcast_owner: "Cameron Nicolson, Fraser McGovern"
+podcast_owner: "papcult.com"
 podcast_email: papcult@gmail.com
 podcast_category: Comedy
 podcast_subcategory_one: "Society &amp; Culture"
