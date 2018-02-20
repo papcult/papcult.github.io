@@ -1,0 +1,24 @@
+<div class="hero">
+	{% assign post = site.posts.first %}
+	<div id="videoPlayer" data-title="{{ post.title }}" data-youtube-id="SwWp-27P0gA" data-poster-url="http://i2.kym-cdn.com/entries/icons/original/000/021/539/NintendoSwitch_hardware.0.0.jpg">
+		<div id="hero__ytplayer" class="hero__element"></div>
+	</div>
+	<div data-title="{{ post.title }}" class="hero__show-info"></div>
+	<div class="hero__poster">
+		 <button class="hero__play-button item--disabled__unclickable">Play Video</button>
+  
+				<div class="content-block hero__poster-episode-info">
+					<div class="hero__poster-star-rating">{{ post.date | date: "%b %-d, %Y" }}</div>
+					<h2 class="hero__poster-show-title">{{ post.title }}</h2>
+					<h3 class="hero__poster-episode-title">Episode {{ post.podcast_number}}</h3>
+				</div>
+
+			</div>
+
+	  <noscript>
+	    <style> .hero__play-button { display: none }</style>
+	    <div class="hero__js-error">
+	      Sorry, you need JavaScript enabled to play these videos.
+	    </div>
+	  </noscript>
+</div>	

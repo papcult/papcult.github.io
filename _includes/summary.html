@@ -1,0 +1,75 @@
+{% assign post = site.posts.first %}
+<div class="featured-episode">
+  <h2 class="featured-episode__show-title">{{ post.title }}</h2>
+  <h3 class="featured-episode__episode-title">Episode {{ post.podcast_number}}</h3>
+  <p><a href="#" class="episode__download-btn">
+			<svg width="16" height="16">
+  <path class="dial primary-light-fill" data-radius="12"></path>
+
+  <svg class="is-downloading" x="2" y="2" height="12" width="12" viewBox="0 0 24 24">
+    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="#FFFFFF"></path>
+  </svg>
+</svg> 
+</a></p>
+		<p><a class="small-button" href="#">See More</a></p>
+</div>
+<section class="episode">
+	<div class="content-block">
+	{% if page.is_post %}
+<h1 class="post-title" itemprop="name headline"> {{ post.title }} </h1>
+{% endif %}
+	<div class=" episode__summary">
+		<div class="episode__description">
+		{% if page.is_post %}
+		<h2> Description </h2>
+		{{ post.content }}
+		{% else %} 
+				<span class="episode__description-excerpt">
+		{{ post.excerpt }}	
+		</span>
+
+			<div class="episode__col-2-panel-members">
+<!-- 		<img src="{{base}}/images/ic_mic_none_black_24dp_2x.png" />
+ -->		
+<i class="material-icons">mic_none</i>
+ <ul>
+	<li><a href="#"><img src="https://pbs.twimg.com/profile_images/827727043165114369/Bg_6JUpu_normal.jpg" /> <span>Cameron Nicolson</span></a> </li>
+	<li><a href="#"><img src="https://pbs.twimg.com/profile_images/707319510508937217/6hruGzuq_normal.jpg" /> <span>Fraser McGovern</span></a> </li>
+	<li><a href="#"><img src="https://pbs.twimg.com/profile_images/833815101006282754/yqY6VzfG_normal.jpg" /> <span>John McGovern</span></a></li>
+	</ul>
+	<div class="episode__col-2-download">
+	 <a class="button" href="{{ post.url | relative_url }}"><i class="material-icons">file_download</i>Download</a>
+	</div>
+	</div>
+
+<!--  <div class="episode__description-content">
+		<div class="episode__col-1">
+			<div class="episode__more">
+ 			<a class="button" href="{{ post.url | relative_url }}">View More</a>
+		</div>
+	</div>
+		<div class="episode__col-2">
+				<div class="episode__download">
+					<div class="episode__download-header">Links</div>
+					 <ul>
+					 <li><a href="#" class="episode__download-btn">
+			<svg width="16" height="16">
+  <path class="dial primary-light-fill" data-radius="12"></path>
+  <svg class="is-downloading" x="2" y="2" height="12" width="12" viewBox="0 0 24 24">
+    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="#FFFFFF"></path>
+  </svg>
+</svg> 
+</a></li>
+<li><a href="#"></a></li>
+</ul>
+</div>
+</div>
+		</div> -->
+		{% endif %}
+		</div>
+
+
+</div>
+</div>
+</section>	
+<a class="more-info-link" href="#">See More<i class="material-icons">keyboard_arrow_right</i></a>

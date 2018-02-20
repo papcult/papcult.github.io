@@ -22,13 +22,26 @@ twitter_username: papcultdotcom
 github_username:  papcult
 
 # Build settings
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+
 markdown: kramdown
 theme: minima
+comments: true
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+sass:
+  style: compressed
+disqus:
+  shortname: papcult
 
 
 # Podcast settings

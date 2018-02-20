@@ -1,0 +1,12 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+.episode {
+	 &__col-1, &__col-2, &__col-3 {
+           border-top: 1px solid #ddd;
+    }
+
+    &__description, &__col-2, &__col-3 {
+        padding: 1.5em 0 0 0;
+    }
+}

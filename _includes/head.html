@@ -1,0 +1,37 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <link href="http://vjs.zencdn.net/5.17.0/video-js.css" rel="stylesheet">
+
+  <link href="{{ "/assets/video-js.css" | relative_url }}" rel="stylesheet">
+
+
+    {% if page.is_post %}
+      <link rel="stylesheet" type="text/css" href="{{ "/assets/post.css" | relative_url }}">
+    {% endif %}
+
+  {% capture styles %}
+  {% include styles.css %}
+  {% endcapture %}
+
+  <style>
+  {{ styles | scssify }}
+  </style>
+
+  
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+</head>

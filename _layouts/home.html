@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="home">
+<section class='home__new-releases'>
+
+  <h2 class="home__new-releases-title">Newest Releases <span>|</span><a href="{{ "/podcast.rss" | relative_url }}"> via RSS</a></h2>
+  
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.categories.podcast %}
+    <a href="{{ post.url | relative_url }}" class="post-link">
+      <li>
+        <div class="media-thumbnail">
+        <img src="https://i.ytimg.com/vi/iTadxMf75As/maxresdefault.jpg" />
+        </div>
+        <div class="media-body">
+        <span class="home__episode-synopsis-number">{{ post.podcast_number }}</span>
+        <h3 class="home__episode-title">{{ post.title | escape }}</h3>
+        {{ post.excerpt }}
+        <span class="home__post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+      </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+</section>
+</div>
